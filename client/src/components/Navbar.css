@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 42px;
+    background: rgba(8, 27, 45, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.04em;
+}
+
+.brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #102a3f;
+    font-size: 1.1rem;
+    font-weight: 900;
+    box-shadow: 0 12px 24px rgba(251, 191, 36, 0.28);
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.navbar-links a,
+.navbar-links button {
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #dbeafe;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover {
+    color: #fbbf24;
+    transform: translateY(-1px);
+}
+
+.logout-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
